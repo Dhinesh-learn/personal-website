@@ -1,0 +1,556 @@
+body {
+  margin: 0 auto;
+}
+#big-div {
+  background-color: #dedede;
+}
+#my-banner {
+  margin: 0 auto;
+  background-image: url(images/banner2.jpg);
+  background-size: 100%;
+  height: 100vh;
+}
+#header1 {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  /* background-color:black;
+  opacity: 0.7 */
+}
+.menu-links {
+  display: flex;
+  margin: 0px 80px;
+}
+#logo {
+  color: rgb(255, 255, 255);
+  padding: 20px 30px;
+  margin-left: 120px;
+  margin-bottom: 0px;
+  font-size: 36px;
+}
+.menu-links li {
+  list-style-type: none;
+  padding: 30px 20px;
+  margin-bottom: 0px;
+}
+.menu-links li a {
+  color: white;
+  text-decoration: none;
+}
+.menu-links li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.menu {
+  display: none;
+}
+@media all and (max-width: 840px) {
+  nav {
+    flex-direction: column;
+  }
+  nav li {
+    display: block;
+    padding: 10px 0px !important;
+  }
+  ul {
+    text-align: right;
+    display: none !important;
+  }
+  nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+    background-color: transparent;
+  }
+  .logo {
+    align-self: flex-start;
+    margin: 10px 0px 0px 30px;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    right: 75px;
+    top: 25px;
+    color: white;
+    margin: 10px;
+  }
+  .showmenu {
+    display: block !important;
+  }
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
+  opacity: 0.8;
+  transition: 1s ease-out;
+}
+@media all and (max-width: 840px) {
+  .fixed-top {
+    position: static;
+  }
+}
+.home-banner {
+  height: 100%;
+}
+.banner-image {
+  height: 100%;
+}
+.banner-texts .name-role {
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.banner-texts .name-role h1 {
+  font-size: 68px;
+}
+@media all and (max-width: 840px) {
+  .banner-texts .name-role h1 {
+    font-size: 52px;
+  }
+  #typed {
+    font-size: 34px;
+  }
+}
+#typed {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 44px;
+}
+#profile {
+  margin: 0;
+}
+#profile-content {
+  margin: 50px 100px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  border-radius: 10px;
+  padding: 50px;
+}
+@media all and (max-width: 840px) {
+  #profile-content {
+    margin: 25px 50px;
+  }
+}
+.profile-section {
+  width: 50%;
+}
+#profile-name {
+  display: flex;
+}
+@media all and (max-width: 680px) {
+  #profile-content {
+    display: block;
+    margin: 13px 25px;
+    padding: 25px;
+  }
+}
+#profile-name .image-profile {
+  padding: 20px 10px;
+}
+#profile-name .image-profile img {
+  border-radius: 5px;
+}
+@media all and (max-width: 840px) {
+  #profile-name {
+    display: block;
+  }
+}
+#profile-name .bio-profile {
+  padding: 20px 10px;
+}
+@media all and (max-width: 680px) {
+  #profile-name .bio-profile {
+    padding: 10px 2px;
+  }
+}
+#profile-name section h5 {
+  color: rgb(106, 106, 106);
+  line-height: 2.5rem;
+}
+#profile-name section h5 b {
+  color: black;
+}
+#profile-content #about-me {
+  padding: 20px;
+  padding-left: 10px;
+  width: 50%;
+  line-height: 2rem;
+  font-size: 18px;
+  text-align: justify;
+}
+@media all and (max-width: 680px) {
+  #profile-content #about-me {
+    width: 100%;
+  }
+}
+#profile-content #about-me h3 {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-offset: 5px;
+}
+.skill-mf {
+  padding: 0px 0px 10px 10px;
+}
+.skill-mf span {
+  line-height: 2.5rem;
+}
+#services {
+  margin: 50px 100px;
+}
+@media all and (max-width: 840px) {
+  #services {
+    margin: 25px 50px;
+  }
+}
+@media all and (max-width: 680px) {
+  #services {
+    margin: 13px 25px;
+  }
+}
+#services h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-offset: 5px;
+  padding: 30px;
+}
+.blue-circle {
+  border: 10px solid #007aff;
+  border-radius: 50%;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.row-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 10px;
+}
+.services-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 416px;
+  height: 400px;
+  justify-content: center;
+  text-align: justify;
+}
+@media all and (max-width: 840px) {
+  .services-box {
+    width: 210px;
+    height: auto;
+  }
+}
+@media all and (max-width: 680px) {
+  .services-box {
+    width: 180px;
+    height: auto;
+  }
+}
+.services-box h3 {
+  padding: 10px 0px;
+  text-align: center;
+}
+.blue-circle:hover {
+  border: 10px solid #e9ecef;
+}
+.services-box i:hover {
+  color: white;
+  background-color: #007aff;
+}
+#works {
+  margin: 50px 100px;
+}
+@media all and (max-width: 840px) {
+  #works {
+    margin: 25px 50px;
+  }
+}
+#works h2 {
+  padding: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-underline-offset: 5px;
+}
+.my-works {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 10px;
+}
+.my-works section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 416px;
+  height: 400px;
+  text-align: justify;
+}
+@media all and (max-width: 840px) {
+  .my-works section {
+    width: 210px;
+    height: auto;
+  }
+}
+@media all and (max-width: 680px) {
+  .my-works .profile-section {
+    width: 180px;
+    height: auto;
+  }
+}
+.my-works section h4 {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+.my-works section a {
+  background-color: #007aff;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px;
+  border: 5px solid #007aff;
+  border-radius: 5px;
+}
+.my-works section a:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-color: #ffffff;
+  zoom: 1.1;
+  transition: 0.1s;
+}
+.style-banner {
+  background-attachment: fixed;
+  background-size: cover;
+  /* position: relative; */
+  background-image: linear-gradient(
+      rgba(0, 89, 255, 0.7),
+      rgba(0, 110, 255, 0.7)
+    ),
+    url("images/overlay-bg.jpg");
+}
+.images-leader {
+  text-align: center;
+  color: white;
+  padding: 100px 0px;
+}
+.images-leader span {
+  padding-top: 20px;
+  padding-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.images-leader p {
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+.images-leader img {
+  border-radius: 50% !important;
+  max-width: 100%;
+  height: auto;
+}
+.banner-leader {
+  transition: right 0.5s ease;
+}
+.education-span h2 {
+  padding: 30px;
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: blue;
+}
+.education-section {
+  text-align: center;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+.education-section .studies {
+  position: relative;
+}
+.education-section .studies p {
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px 20px;
+  width: 416px;
+  height: auto;
+  text-align: justify;
+}
+@media all and (max-width: 840px) {
+  .education-section .studies p {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+.education-section .studies .studies-11 {
+  position: absolute;
+  /* z-index: 10; */
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  top: -12px;
+}
+.education-section .studies .studies-11 h6 {
+  background-color: #007aff;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 10px;
+  width: fit-content;
+}
+.contact {
+  margin: 0 auto;
+  padding: 100px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(0, 89, 255, 0.7),
+      rgba(0, 110, 255, 0.7)
+    ),
+    url("images/overlay-bg.jpg");
+}
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+@media all and (max-width: 840px) {
+  .contact-us {
+    display: block;
+    margin: 25px 50px;
+  }
+  .contact {
+    padding: 50px;
+  }
+}
+#submit-form {
+  width: 50%;
+  padding: 20px;
+}
+@media all and (max-width: 840px) {
+  #submit-form {
+    width: 100%;
+    padding: 10px;
+  }
+}
+#submit-form h2 {
+  padding: 25px;
+  text-decoration: underline;
+  text-decoration-color: #007aff;
+  text-underline-offset: 8px;
+  margin: 0 auto;
+}
+.form-side input {
+  margin: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+}
+.form-side .field {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.form-side input[type="text"]:focus {
+  border: 3px solid #daf6ff;
+}
+.form-side textarea {
+  outline: none;
+}
+.form-side textarea[type="text"]:focus {
+  border: 3px solid #daf6ff;
+}
+.form-side textarea {
+  margin: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.form-side .field .error {
+  color: red;
+}
+.form-side .success input {
+  border-color: green;
+}
+.form-side .error input {
+  border-color: red;
+}
+#get-in-touch {
+  width: 50%;
+  padding: 20px;
+}
+#get-in-touch h2 {
+  padding: 25px;
+  text-decoration: underline;
+  text-decoration-color: #007aff;
+  text-underline-offset: 8px;
+  margin: 0 auto;
+}
+#get-in-touch p {
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+#get-in-touch p i {
+  color: #007aff;
+}
+#get-in-touch section {
+  padding: 10px 20px 30px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+#get-in-touch section i {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  border: 3px solid #007aff;
+  border-radius: 50%;
+  margin: 5px;
+}
+#get-in-touch section i:hover {
+  border: 3px solid #c4c4c4;
+  background-color: #007aff;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+.button-send {
+  border: 3px solid #007aff;
+  background-color: #007aff;
+  color: white;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px 20px;
+}
+.button-send:hover {
+  border: 3px solid #c4c4c4;
+}
